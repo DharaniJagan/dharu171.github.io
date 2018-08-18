@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Form</title>
+<link rel="stylesheet" type="text/css" href="styl.css">
+</head>
+<body class="tb">
+<h1>Registration Form</h1>
+<form name="myform" onsubmit="return(validateForm())">
+<label for="userid">Userid:<input type="text" name="id" id="userid" placeholder="min-5 max-12" required /></label><br><br>
+<label for="password">Password:<input type="password" name="pass" id="password" placeholder="min-7 max-12" required/></label><br><br>
+<label for="name">Name:<input type="text" name="nam" id="name" placeholder="Alphabates only" required /></label><br><br>
+<label for="address">Address:<input type="text" id="address" placeholder="Optional" /></label><br><br>
+<label for="country" required>Country:</label>
+<select name="country">
+<option selected>America</option>
+<option>Belgium</option>
+<option>Canada</option>
+<option>Denmark</option>
+<option>England</option>
+<option>France</option>
+<option>Germany</option>
+<option>Hungary</option>
+<option>India</option>
+</select><br><br>
+<label for="zip code">ZIP code:<input type="text" name="num" id="zip code" placeholder="Only numericals" required /></label><br><br>
+<label for="email">Email:<input type="text" id="email" placeholder="Only numericals" required /></label><br><br>
+<label for="sex">Sex:<input type="radio" name="sex" value="male">Male</input><input type="radio" name="sex" value="female">Female</input></label><br><br>
+<label for="language">Language:<input type="checkbox" name="language" value="English">English</input><input type="checkbox" name="language" value="Non English">Non English</input></label><br><br>
+<label>About:</label><br>
+<textarea rows="7" cols="31" placeholder="Optional">
+</textarea><br><br>
+<input class="tt" type="submit" name="Submit">
+</form>
+<script type="text/javascript">
+function validateForm() {
+if (document.myform.id.value.length > 4 && document.myform.id.value.length < 13) {
+
+}else{
+alert("Enter required length..");
+}
+if (document.myform.pass.value.length > 7 && document.myform.pass.value.length < 13) {
+
+}else{
+alert("Enter required length..");
+}
+if (document.myform.nam.value == /^[a-zA-Z]+$/)  {
+
+}else{
+alert("Enter only alphabets..");
+}
+/*if (document.myform.num.value == /^[0-9]+$/ ) {
+
+}else{
+alert("Enter only numbers..");
+}*/
+return(true);
+}
+</script>
+</body>
+</html>
