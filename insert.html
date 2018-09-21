@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student</title>
+	<style type="text/css">
+	
+	#head
+	{
+		height: 70px;
+		width: 100;
+		top: 0;
+		right: 0;
+		left: 0;
+		position: fixed;
+		background-color: #000000;
+	}
+	
+	#form
+	{
+		padding-top: 140px;
+		padding-bottom: 140px;
+	}
+	body
+	{
+		background-color: #F0F8FF;
+	}
+h2{
+	color: BROWN;
+}
+</style>
+
+</head>
+<header id="head"><center><h2>Student_Detail</h2></center></header>
+
+<body>
+	<form  id="form" method="post" action="php2.php" >
+		<center>
+		<b>    Name          :</b></b><input type="text" name="name"  id="name" required><br><br><br>
+	<b>	Roll Number       :</b><input type="text" name="rollno" id="rollno" required><br><br><br>
+	<b>	Semester      :</b><select name="sem" id="sem" required>
+						
+						  <option selected>SEM 1</option>
+					      <option>SEM 2</option>
+						  <option>SEM 3</option>
+						  <option>SEM 4</option>
+						  <option>SEM 5</option>
+						  <option>SEM 6</option>
+						  <option>SEM 7</option>
+						  <option>SEM 8</option>
+					   </select><br><br>	<br>
+	<b>	Mark 1        :</b><input type="text" name="m1"  id="m1" required><br><br><br>
+	<b>	Mark 2        :</b><input type="text" name="m2"  id="m2" required><br><br><br>
+	<b>	Mark 3        :</b><input type="text" name="m3"  id="m3" required><br><br><br>
+			<input type="submit" value="SUBMIT">  		
+		</center>	 			
+	</form>
+	</body>
+</html>
